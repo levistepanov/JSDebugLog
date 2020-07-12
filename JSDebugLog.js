@@ -78,8 +78,8 @@ if ((window.location.href.toLowerCase().indexOf("debug=true") > -1) || (window.l
 // Leave false and uncomment to disable logging even if passing the URI param.
 //_cw.enableLogging = false;
 
-// use this to run any other function that
-//     A. either doesn't take any params
+// use this to run any other function that either:
+//     A. doesn't take any params
 //     B. takes an object as a param
 // and run it through a try/catch block
 _cw.try = function(fun,dat) {
