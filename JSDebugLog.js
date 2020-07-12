@@ -4,8 +4,7 @@ _cw.version = {};
 _cw.version.ver = "1.1.0";
 _cw.version.date = "May 27, 2020";
 
-_cw.tools = {};
-// if tools.enableLogging is 'true', use this to write a console.log or console.warn to the JS console of the browser
+// if enableLogging is 'true', use this to write a console.log or console.warn to the JS console of the browser
 _cw.enableLogging = null;
 _cw.writeLog = function(str,obj,type) {
     let log,item,logType,contentObj = false;
@@ -62,7 +61,7 @@ _cw.writeLog = function(str,obj,type) {
         return true;
     }
 };
-_cw.cw = _cw.writeLog;
+_cw.wl = _cw.writeLog;
 
 // ENABLE LOGGING FOR DEV PRUPOSES via 'debug' in uri
 // This parameter MUST come AFTER the sdk param in the url hash, or the sdk will NOT display.
