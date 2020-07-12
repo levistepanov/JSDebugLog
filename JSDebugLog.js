@@ -61,10 +61,11 @@ _cw.writeLog = function(str,obj,type) {
         return true;
     }
 };
+
+//shortcut
 _cw.wl = _cw.writeLog;
 
 // ENABLE LOGGING FOR DEV PRUPOSES via 'debug' in uri
-// This parameter MUST come AFTER the sdk param in the url hash, or the sdk will NOT display.
 if ((window.location.href.toLowerCase().indexOf("debug=true") > -1) || (window.location.href.toLowerCase().indexOf("debug=1") > -1)) {
     _cw.enableLogging = true;
     console.warn("%c \n\nDEBUG:TRUE.\n>>> STARTING LOG.\n\n", "color: #2dff36");
@@ -73,12 +74,14 @@ if ((window.location.href.toLowerCase().indexOf("debug=true") > -1) || (window.l
     console.warn("%c \nEnable debug mode on this site by passing '#debug=true' in the URL hash, i.e., https://downloads.gigya.com/#debug=true\n\n", "color: #2dff36");
 }
 // set this to true/false to enable/disable logging in the console on Dev site, this overrides the above setting so 'debug' is not required in the URI.
-//_cw.enableLogging = false;  // set this to true to enable logging in the console.
+// set this to true and uncomment to force logging in the console without needing the URI param. 
+// Leave false and uncomment to disable logging even if passing the URI param.
+//_cw.enableLogging = false;
 
-// set this to true/false to enable/disable logging in the console. This will override the above function
-//_cw.enableLogging = false;  // set this to true to enable logging in the console.
-
-// use this to run any other function that A. either doesn't take any params, or B. takes an object as a param, and run it through a try/catch block
+// use this to run any other function that
+//     A. either doesn't take any params
+//     B. takes an object as a param
+// and run it through a try/catch block
 _cw.try = function(fun,dat) {
     let __currentFunction = null;
     let __options = null;
