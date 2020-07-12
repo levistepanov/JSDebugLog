@@ -1,3 +1,4 @@
+"use strict";
 let _cw = {};
 _cw.version = {};
 _cw.version.ver = "1.1.0";
