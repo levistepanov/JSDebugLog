@@ -71,7 +71,7 @@ if ((window.location.href.toLowerCase().indexOf("debug=true") > -1) || (window.l
     console.warn("%c \n\nDEBUG:TRUE.\n>>> STARTING LOG.\n\n", "color: #2dff36");
 } else {
     _cw.enableLogging = false;
-    console.warn("%c \nEnable debug mode on this site by passing '#debug=true' in the URL hash, i.e., https://downloads.gigya.com/#debug=true\n\n", "color: #2dff36");
+    console.warn("%c \nEnable debug mode on this site by passing '#debug=true' in the URL hash, i.e., https://yoursite.com/#debug=true\n\n", "color: #2dff36");
 }
 // set this to true/false to enable/disable logging in the console on Dev site, this overrides the above setting so 'debug' is not required in the URI.
 // set this to true and uncomment to force logging in the console without needing the URI param. 
