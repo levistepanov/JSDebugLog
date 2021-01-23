@@ -8,4 +8,5 @@ This has only been tested with Google Chrome.
     _cw.writeLog("mousein2: no ev"); // simple log
     _cw.writeLog("closeContent: ", closeContent, "warn"); // a warning with also an object returned
     _cw.writeLog("closeContent: ", closeContent); // a log with also an object returned
+    _cw.writeLog("closeContent: ", closeContent, "log"); // also a log with an object returned
   ```
