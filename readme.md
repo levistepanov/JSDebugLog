@@ -4,6 +4,8 @@ This has only been tested with Google Chrome.
   
   use examples:  
   ```
+    _cw.writeLog("string", object/null, "type of console message - log/warn");
+    
     _cw.writeLog("test 'Main' completed.", null, "warn"); // a warning
     _cw.writeLog("mousein2: no ev"); // simple log
     _cw.writeLog("closeContent: ", closeContent, "warn"); // a warning with also an object returned
