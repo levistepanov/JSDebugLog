@@ -2,7 +2,7 @@ This small code snippet allows you to add console.log and console.warn logs to y
 
 This has only been tested with Google Chrome.
   
-  examples:  
+  use examples:  
   ```
     _cw.writeLog("test 'Main' completed.", null, "warn"); // a warning
     _cw.writeLog("mousein2: no ev"); // simple log
